@@ -1,1 +1,4 @@
-hi
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hello
