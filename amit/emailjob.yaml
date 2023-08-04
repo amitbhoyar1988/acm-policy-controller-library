@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emailjob
+  labels:
+    app: emailjob
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emailjob
+  template:
+    metadata:
+      labels:
+        app: emailjob
+    spec:
+      containers:
+      - name: emailjob
+        image: nginx
