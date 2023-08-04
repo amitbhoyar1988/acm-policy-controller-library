@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: emailservice
-        image: ubuntu
+        image: busybox
